@@ -1,0 +1,43 @@
+{
+    "Actor": {
+        "types": ["character", "npc"],
+        "templates": {
+            "common": {
+                "compententi": {
+                    "corpo":{"value":0},
+                    "istinto":{"value":0},
+                    "cuore":{"value":0},
+                    "mente":{"value":0}
+                },
+                "mezzi":{
+                    "percezione":{"value":0},
+                    "azione":{"value":0},
+                    "desiderio":{"value":0},
+                    "resistenza":{"value":0}
+                },
+                "regni":{
+                    "minerale":{"value":0},
+                    "umano":{"value":0},
+                    "vegetale":{"value":0},
+                    "meccanico":{"value":0},
+                    "animale":{"value":0},
+                    "nulla":{"value":-1}
+                },
+                "aura":{"value":0},
+                "attacco":{"value":0},
+                "difesa":{"value":0},
+                "energie":{
+                    "potenza":{"value":0, "max":0},
+                    "rapidità":{"value":0, "max":0},
+                    "precisione":{"value":0, "max":0}
+                }
+            },
+            "character":{
+                "templates":["common"]
+            }, 
+            "npc":{
+                "templates":["common"]
+            }
+        }
+    }
+}
