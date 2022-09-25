@@ -16,20 +16,93 @@
                     "resistenza":{"value":0}
                 },
                 "regni":{
-                    "minerale":{"value":0},
-                    "umano":{"value":0},
-                    "vegetale":{"value":0},
-                    "meccanico":{"value":0},
-                    "animale":{"value":0},
-                    "nulla":{"value":-1}
+                    "minerale":{"value":0, "min": 0, "max": 3},
+                    "umano":{"value":0, "min": 0, "max": 3},
+                    "vegetale":{"value":0, "min": 0, "max": 3},
+                    "meccanico":{"value":0, "min": 0, "max": 3},
+                    "animale":{"value":0, "min": 0, "max": 3},
+                    "nulla":{"value":-1, "min": -1, "max": 3}
                 },
-                "aura":{"value":0},
-                "attacco":{"value":0},
-                "difesa":{"value":0},
+                "aura":{"value":0, "min": 0},
+                "attacco":{"value":0, "min": 0},
+                "difesa":{"value":0, "min": 0},
+                "punti": {
+                    "pr":{"value":0, "max":0},
+                    "pe":{"value":0, "max":0},
+                    "pv": {
+                        "te":{"value":0, "max":0, "description": "Testa"},
+                        "to":{"value":0, "max":0, "description": "Torso"},
+                        "bd":{"value":0, "max":0, "description": "Braccio Destro"},
+                        "bs":{"value":0, "max":0, "description": "Braccio Sinistro"},
+                        "gd":{"value":0, "max":0, "description": "Gamba Destra"},
+                        "gs":{"value":0, "max":0, "description": "Gamba Sinistra"},
+                        "l1":{"value":0, "max":0, "description": "Locazione extra?"},
+                        "l2":{"value":0, "max":0, "description": "Locazione extra?"}
+                    }
+                },
+                "armatura": {
+                    "protezione": 0,
+                    "locazioni": {
+                        "te":{"value":0, "max":0, "description": "Testa"},
+                        "to":{"value":0, "max":0, "description": "Torso"},
+                        "bd":{"value":0, "max":0, "description": "Braccio Destro"},
+                        "bs":{"value":0, "max":0, "description": "Braccio Sinistro"},
+                        "gd":{"value":0, "max":0, "description": "Gamba Destra"},
+                        "gs":{"value":0, "max":0, "description": "Gamba Sinistra"},
+                        "l1":{"value":0, "max":0, "description": "Locazione extra?"},
+                        "l2":{"value":0, "max":0, "description": "Locazione extra?"}
+                    }
+                },
                 "energie":{
-                    "potenza":{"value":0, "max":0},
-                    "rapidità":{"value":0, "max":0},
-                    "precisione":{"value":0, "max":0}
+                    "potenza":{"value":0, "min":0, "max":0},
+                    "rapidità":{"value":0, "min":0, "max":0},
+                    "precisione":{"value":0, "min":0, "max":0}
+                },
+                "talenti":{
+                    "A. Corpo/corpo":{"value":-6, "max": 3},
+                    "A. Fuoco":{"value":-6, "max": 3},
+                    "A. Lancio":{"value":-6, "max": 3},
+                    "Atletica":{"value":-6, "max": 3},
+                    "Cavalcare":{"value":-6, "max": 3},
+                    "Cercare":{"value":-6, "max": 3},
+                    "Commerciare":{"value":-6, "max": 3},
+                    "Concentrazione":{"value":-6, "max": 3},
+                    "Correre":{"value":-6, "max": 3},
+                    "Cosmo":{"value":-6, "max": 3},
+                    "Dottrina dei cavalieri":{"value":-6, "max": 3},
+                    "Geografia":{"value":-6, "max": 3},
+                    "Guidare Veicoli":{"value":-6, "max": 3},
+                    "Insegnamento":{"value":-6, "max": 3},
+                    "Leadership":{"value":-6, "max": 3},
+                    "Leggere/Scrivere":{"value":-6, "max": 3},
+                    "Medicina":{"value":-6, "max": 3},
+                    "Oratoria":{"value":-6, "max": 3},
+                    "Pronto soccorso":{"value":-6, "max": 3},
+                    "Raggirare":{"value":-6, "max": 3},
+                    "Rissare":{"value":-6, "max": 3},
+                    "Riparare Armature":{"value":-6, "max": 3},
+                    "Sopravvivenza":{"value":-6, "max": 3},
+                    "Spionaggio":{"value":-6, "max": 3},
+                    "Travestimento":{"value":-6, "max": 3},
+                    "Tecnologia ":{"value":-6, "max": 3}
+                },
+                "colpi": {
+                    "Calcio Marziale": {"value": -6, "max": 3, "description": ""},
+                    "Carica": {"value": -6, "max": 3, "description": ""},
+                    "Immobilizzare": {"value": -6, "max": 3, "description": ""},
+                    "Pugno Marziale": {"value": -6, "max": 3, "description": ""},
+                    "Spinta": {"value": -6, "max": 3, "description": ""},
+                    "Stritolamento": {"value": -6, "max": 3, "description": ""},
+                    "Testata marziale": {"value": -6, "max": 3, "description": ""},
+                    "Calcio con salto": {"value": -6, "max": 3, "description": ""},
+                    "Resistenza al dolore": {"value": -6, "max": 3, "description": ""}
+                },
+                "dettagli": {
+                    "background": "",
+                    "giocatore": "",
+                    "età":"",
+                    "armatura": "",
+                    "xp": 0
                 }
             },
             "character":{
@@ -39,5 +112,6 @@
                 "templates":["common"]
             }
         }
-    }
+    },
+    "Item": {}
 }
